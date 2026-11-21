@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · PS5</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="kicker">Grand Theft Auto VI · PlayStation 5 · offline guide</p>
+  <h1>Leonida Trophy Guide</h1>
+  <p class="lede">Every one of the 55 trophies — official name, description and grade, a guide in our own words with its sources, and a tracker that remembers your progress.</p>
+  <ul class="facts" id="facts"></ul>
+  <div class="progress-wrap">
+    <div class="progress-bar"><span id="progressFill"></span></div>
+    <p class="progress-text" id="progressText">0 of 55 earned</p>
+  </div>
+  <div class="toolbar">
+    <button id="exportBtn" type="button">Export progress</button>
+    <label class="import-btn">Import progress<input id="importFile" type="file" accept="application/json"></label>
+    <button id="spoilerBtn" type="button" aria-pressed="false">Spoilers: off</button>
+    <button id="resetBtn" type="button">Reset tracker</button>
+  </div>
+</header>
+
+<section class="roadmap" id="roadmap">
+  <h2>Roadmap to the platinum</h2>
+  <p class="roadmap-intro">About 200 hours, difficulty 4 out of 10, one playthrough, no online trophies. Free roam stays open after the story, and there is no mission replay — keep manual saves at the start and end of each chapter.</p>
+  <div class="stages" id="stages"></div>
+  <aside class="warning">
+    <h3>⚠ The one trophy to protect</h3>
+    <p><strong>Positive Mental Attitude</strong> is the only trophy the guides flag as possibly missable. Its first meditation spot is the balcony of Jason's house in Chapter 1 — after the mission <em>Down to Earth</em>, find Lucia at the house in the morning, follow her when she mentions meditating and accept. Do it before leaving Chapter 1 and keep a manual save from before it. The five stranger strands (Andy, Kenton, Billy, Randy, Tyrone) are also reported to have windows tied to story progress, so start each one when it first appears. Cheats disable trophies and saving, so leave them off for a trophy run.</p>
+  </aside>
+</section>
+
+<section class="controls" id="controls">
+  <h2>Checklist</h2>
+  <div class="filters">
+    <label class="search">Search <input id="searchInput" type="search" placeholder="Trophy, mission or activity…" autocomplete="off"></label>
+    <label>Kind
+      <select id="kindFilter">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="missable">Missable</option>
+        <option value="collectibles">Collectibles</option>
+        <option value="activities">Activities</option>
+        <option value="robbery">Robberies</option>
+        <option value="side">Side quests</option>
+        <option value="money">Money</option>
+        <option value="misc">Miscellaneous</option>
+        <option value="completion">100% completion</option>
+        <option value="platinum">Platinum</option>
+      </select>
+    </label>
+    <label>Grade
+      <select id="gradeFilter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label>Show
+      <select id="earnedFilter">
+        <option value="all">All trophies</option>
+        <option value="todo">Not earned yet</option>
+        <option value="earned">Earned only</option>
+      </select>
+    </label>
+  </div>
+  <p class="count" id="listCount"></p>
+  <p class="count" id="miniProgress"></p>
+  <label class="spoiler-check"><input id="spoilerCheck" type="checkbox"> Hide story spoilers</label>
+</section>
+
+<main class="list" id="trophyList" aria-live="polite"></main>
+
+<footer class="sources">
+  <h2>Where the guides come from</h2>
+  <p>Names, descriptions and grades are shown exactly as PlayStation publishes them, as listed by Exophase and PSNProfiles (cross-checked by PlanetGTA6). Each trophy's guide is written for this page in its own words and names its sources beside it. Trophies whose method no source has confirmed are marked <strong>method unconfirmed</strong> instead of guessed. Main sources:</p>
+  <ul>
+    <li><a href="https://www.keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/">KeenGamer — GTA 6 Trophy Guide &amp; Platinum Roadmap</a></li>
+    <li><a href="https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap">Push Square — GTA 6 Trophy Guide and Roadmap</a></li>
+    <li><a href="https://www.planetgta6.com/en/gta-6-trophies/">PlanetGTA6 — GTA 6 Trophies (Exophase / PSNProfiles)</a></li>
+    <li><a href="https://sixshore.com/gta-6/guides/trophies-and-achievements/">Sixshore — GTA 6 Trophy and Achievement List</a></li>
+    <li><a href="https://insider-gaming.com/complete-gta-6-trophy-list-how-to-get-all-trophies-achievements/">Insider Gaming — Complete GTA 6 Trophy List</a></li>
+  </ul>
+  <p class="fineprint">A fan-made guide. No Rockstar Games logo, artwork or game imagery is used; the design is our own. Progress is stored only in your browser (localStorage) and can be exported to a file or imported back. A link with <code>?earned=</code> opens a shared checklist.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
